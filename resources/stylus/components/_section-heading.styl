@@ -1,0 +1,23 @@
+.section-heading
+  max-width: 48rem
+
+  &__title
+    font-family: var(--font-display)
+    t-token(h2)
+    font-weight: 600
+    text-wrap: balance
+    color: var(--color-ink)
+
+  &__lead
+    margin-top: 1.25rem
+    max-width: 42rem
+    t-token(lead)
+    text-wrap: pretty
+    color: rgba(15, 45, 82, 0.85)
+
+  // On dark surfaces.
+  &--light &__title
+    color: #fff
+
+  &--light &__lead
+    color: var(--color-ink-soft)

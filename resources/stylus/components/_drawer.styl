@@ -1,0 +1,183 @@
+.drawer
+  margin: 0 0 0 auto
+  height: 100dvh
+  max-height: none
+  width: unquote('min(26rem, 100vw)')
+  max-width: none
+  background-color: var(--color-surface)
+  padding: 0
+  color: var(--color-ink)
+  box-shadow: var(--shadow-drawer)
+
+  &__inner
+    display: flex
+    height: 100%
+    flex-direction: column
+
+  &__head
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 1rem
+    border-bottom: 1px solid var(--color-border-soft)
+    padding: 1rem 1.25rem
+
+  &__title
+    font-family: var(--font-display)
+    t-xl()
+    font-weight: 600
+
+  &__count
+    t-sm()
+    color: var(--color-muted)
+
+  &__empty
+    display: flex
+    flex: 1 1 0%
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    gap: 0.75rem
+    padding-right: 1.5rem
+    padding-left: 1.5rem
+    text-align: center
+
+  &__empty-icon
+    display: inline-flex
+    width: 3rem
+    height: 3rem
+    align-items: center
+    justify-content: center
+    border-radius: 9999px
+    background-color: var(--color-primary-tint)
+    color: var(--color-primary)
+
+  &__empty-title
+    t-token(h3)
+    font-weight: 600
+    color: var(--color-ink)
+
+  &__empty-text
+    color: var(--color-muted)
+
+  &__empty-cta
+    margin-top: 0.5rem
+
+  &__lines
+    flex: 1 1 0%
+    overflow-y: auto
+    padding-right: 1.25rem
+    padding-left: 1.25rem
+    & > :not(:last-child)
+      border-bottom: 1px solid var(--color-border-soft)
+
+  &__footer
+    display: flex
+    flex-direction: column
+    gap: 0.75rem
+    border-top: 1px solid var(--color-border-soft)
+    background-color: var(--color-page)
+    padding: 1.25rem
+
+  &__totals
+    display: flex
+    flex-direction: column
+    gap: 0.375rem
+    t-sm()
+
+  &__row
+    display: flex
+    justify-content: space-between
+    &--total
+      align-items: baseline
+      border-top: 1px solid var(--color-border-soft)
+      padding-top: 0.5rem
+
+  &__label
+    color: var(--color-muted)
+
+  &__amount
+    font-variant-numeric: tabular-nums
+    &--saving
+      font-weight: 600
+      color: var(--color-success)
+    &--total
+      t-lg()
+      font-weight: 700
+      color: var(--color-ink)
+
+  &__total-label
+    font-weight: 600
+    color: var(--color-ink)
+
+  &__note
+    t-xs()
+    color: var(--color-muted)
+
+.cart-line
+  display: flex
+  flex-direction: column
+  gap: 0.75rem
+  padding-top: 1rem
+  padding-bottom: 1rem
+
+  &__code
+    font-family: var(--font-display)
+    font-weight: 600
+    color: var(--color-ink)
+
+  &__name
+    overflow: hidden
+    display: -webkit-box
+    -webkit-box-orient: vertical
+    -webkit-line-clamp: 2
+    t-sm()
+    color: var(--color-muted)
+
+  &__row
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 0.75rem
+
+  &__total
+    font-weight: 700
+    color: var(--color-ink)
+    font-variant-numeric: tabular-nums
+
+  &__remove
+    display: inline-flex
+    cursor: pointer
+    align-items: center
+    gap: 0.375rem
+    align-self: flex-start
+    t-sm()
+    font-weight: 500
+    color: var(--color-primary)
+    text-underline-offset: 4px
+    +hover()
+      text-decoration-line: underline
+
+.stepper
+  display: inline-flex
+  align-items: center
+  border-radius: var(--radius-md)
+  border: 1px solid var(--color-border-control)
+
+  &__button
+    display: inline-flex
+    width: 2.25rem
+    height: 2.25rem
+    cursor: pointer
+    align-items: center
+    justify-content: center
+    color: var(--color-ink)
+    +hover()
+      background-color: var(--color-primary-tint)
+
+  &__value
+    width: 2rem
+    text-align: center
+    t-sm()
+    font-weight: 600
+    font-variant-numeric: tabular-nums

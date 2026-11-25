@@ -1,0 +1,441 @@
+{
+  "updatedAt": "2026-11-24",
+  "categories": [
+    {
+      "slug": "clinica",
+      "label": "Clinica e Neuropsicologia",
+      "kind": "test"
+    },
+    {
+      "slug": "scuola",
+      "label": "Scuola ed Età evolutiva",
+      "kind": "test"
+    },
+    {
+      "slug": "lavoro",
+      "label": "Lavoro e Organizzazioni",
+      "kind": "test"
+    },
+    {
+      "slug": "formazione",
+      "label": "Formazione",
+      "kind": "course"
+    }
+  ],
+  "products": [
+    {
+      "id": "orma",
+      "kind": "test",
+      "code": "ORMA",
+      "name": "Batteria per l'esame della memoria nell'adulto",
+      "category": "clinica",
+      "format": "cartaceo",
+      "authors": [
+        "Livia Santacroce",
+        "Ettore Valsecchi"
+      ],
+      "summary": "Orientamento, rievocazione, memoria di lavoro e apprendimento: un profilo di memoria completo in meno di un'ora.",
+      "ageMin": 18,
+      "ageMax": 90,
+      "ageNote": null,
+      "duration": "45–60 min",
+      "administration": "Individuale, carta e matita",
+      "scoring": "Manuale",
+      "qualification": "C",
+      "unit": "Kit: manuale, libro stimoli, 25 protocolli",
+      "priceCents": 125000,
+      "salePriceCents": 106250,
+      "image": {
+        "src": "photos/orma.jpg",
+        "alt": "Un uomo anziano a colloquio con una professionista in uno studio luminoso",
+        "width": 1600,
+        "height": 1200,
+        "credit": {
+          "author": "Vitaly Gariev",
+          "profile": "https://unsplash.com/@silverkblack",
+          "source": "https://unsplash.com/photos/doctor-talks-with-an-elderly-patient-on-a-couch-BUNNEclz-yQ"
+        }
+      }
+    },
+    {
+      "id": "ired",
+      "kind": "test",
+      "code": "IRED",
+      "name": "Inventario di Regolazione Emotiva e Disagio",
+      "category": "clinica",
+      "format": "digitale",
+      "authors": [
+        "Agnese Fontanarosa"
+      ],
+      "summary": "Questionario self-report sulle strategie di regolazione emotiva, con report pronto a fine compilazione.",
+      "ageMin": 14,
+      "ageMax": 75,
+      "ageNote": null,
+      "duration": "15–20 min",
+      "administration": "Individuale o collettiva, online anche a distanza",
+      "scoring": "Automatico con report",
+      "qualification": "C",
+      "unit": "Pacchetto da 25 somministrazioni",
+      "priceCents": 18000,
+      "salePriceCents": 14400,
+      "image": {
+        "src": "photos/ired.jpg",
+        "alt": "Una psicologa prende appunti durante un colloquio con una paziente",
+        "width": 1600,
+        "height": 1200,
+        "credit": {
+          "author": "Vitaly Gariev",
+          "profile": "https://unsplash.com/@silverkblack",
+          "source": "https://unsplash.com/photos/a-woman-sitting-in-a-chair-talking-to-another-woman-CGCXJJlkpOQ"
+        }
+      }
+    },
+    {
+      "id": "soglia",
+      "kind": "test",
+      "code": "SOGLIA",
+      "name": "Screening Online Globale dell'Invecchiamento Attivo",
+      "category": "clinica",
+      "format": "digitale",
+      "authors": [
+        "Ettore Valsecchi"
+      ],
+      "summary": "Screening su tablet delle principali funzioni cognitive: dieci minuti per capire se serve un approfondimento.",
+      "ageMin": 60,
+      "ageMax": 95,
+      "ageNote": null,
+      "duration": "10–12 min",
+      "administration": "Individuale, su tablet",
+      "scoring": "Automatico, corretto per età e scolarità",
+      "qualification": "B",
+      "unit": "Pacchetto da 50 somministrazioni",
+      "priceCents": 32000,
+      "salePriceCents": 28800,
+      "image": {
+        "src": "photos/soglia.jpg",
+        "alt": "Una donna anziana seduta accanto al divano usa un tablet sorridendo",
+        "width": 1600,
+        "height": 1200,
+        "credit": {
+          "author": "Centre for Ageing Better",
+          "profile": "https://unsplash.com/@ageing_better",
+          "source": "https://unsplash.com/photos/a-woman-sitting-on-a-couch-looking-at-a-tablet-JPkwTzxIfGg"
+        }
+      }
+    },
+    {
+      "id": "lesca",
+      "kind": "test",
+      "code": "LESCA 6-11",
+      "name": "Batteria di Lettura, Scrittura e Calcolo",
+      "category": "scuola",
+      "format": "cartaceo",
+      "authors": [
+        "Tommaso Belfiore",
+        "Marta Quercioli"
+      ],
+      "summary": "Prove standardizzate di lettura, scrittura e calcolo per la scuola primaria, a supporto della valutazione degli apprendimenti.",
+      "ageMin": 6,
+      "ageMax": 11,
+      "ageNote": "classi 1ª–5ª primaria",
+      "duration": "40–70 min",
+      "administration": "Individuale e collettiva, carta e matita",
+      "scoring": "Manuale",
+      "qualification": "B",
+      "unit": "Kit: manuale, materiali per le prove, 50 protocolli",
+      "priceCents": 49000,
+      "salePriceCents": 36750,
+      "image": {
+        "src": "photos/lesca.jpg",
+        "alt": "Un bambino legge un libro seguendo le righe con il dito",
+        "width": 1600,
+        "height": 1200,
+        "credit": {
+          "author": "Michał Parzuchowski",
+          "profile": "https://unsplash.com/@mparzuchowski",
+          "source": "https://unsplash.com/photos/child-reading-book-at-wooden-table-BPXSTl_HBhk"
+        }
+      }
+    },
+    {
+      "id": "arca",
+      "kind": "test",
+      "code": "ARCA 6-16",
+      "name": "Scala di Attenzione, Regolazione e Comportamento in Aula",
+      "category": "scuola",
+      "format": "digitale",
+      "authors": [
+        "Nives Ardenghi"
+      ],
+      "summary": "Questionari paralleli per insegnanti e genitori su attenzione, autoregolazione e comportamento, con confronto tra le due fonti.",
+      "ageMin": 6,
+      "ageMax": 16,
+      "ageNote": null,
+      "duration": "10–15 min",
+      "administration": "Compilazione online di insegnanti e genitori",
+      "scoring": "Automatico",
+      "qualification": "B",
+      "unit": "Pacchetto da 20 profili",
+      "priceCents": 15000,
+      "salePriceCents": 10500,
+      "image": {
+        "src": "photos/arca.jpg",
+        "alt": "Una classe di scuola primaria segue la lezione dell’insegnante",
+        "width": 1600,
+        "height": 1200,
+        "credit": {
+          "author": "Quilia",
+          "profile": "https://unsplash.com/@heyquilia",
+          "source": "https://unsplash.com/photos/students-in-classroom-with-teacher-presenting-zFSo6bnZJTw"
+        }
+      }
+    },
+    {
+      "id": "cifra",
+      "kind": "test",
+      "code": "CIFRA 4-8",
+      "name": "Calcolo, Intelligenza numerica, Fatti e Ragionamento Aritmetico",
+      "category": "scuola",
+      "format": "cartaceo",
+      "authors": [
+        "Marta Quercioli"
+      ],
+      "summary": "Prove brevi sui prerequisiti numerici e sulle prime abilità di calcolo, dalla scuola dell'infanzia alla terza primaria.",
+      "ageMin": 4,
+      "ageMax": 8,
+      "ageNote": null,
+      "duration": "20–30 min",
+      "administration": "Individuale",
+      "scoring": "Manuale",
+      "qualification": "A",
+      "unit": "Kit: manuale, libro stimoli, 30 protocolli",
+      "priceCents": 26000,
+      "salePriceCents": 22100,
+      "image": {
+        "src": "photos/cifra.jpg",
+        "alt": "Una bambina compone un puzzle di legno con i numeri colorati",
+        "width": 1600,
+        "height": 1200,
+        "credit": {
+          "author": "Anna Mysłowska-Kiczek",
+          "profile": "https://unsplash.com/@silamalychrzeczy",
+          "source": "https://unsplash.com/photos/a-little-girl-playing-with-a-wooden-toy-pkQV94wm_Ww"
+        }
+      }
+    },
+    {
+      "id": "stilo",
+      "kind": "test",
+      "code": "STILO",
+      "name": "Questionario sugli Stili di Leadership nelle Organizzazioni",
+      "category": "lavoro",
+      "format": "digitale",
+      "authors": [
+        "Corrado Lanfranchi"
+      ],
+      "summary": "Descrive lo stile di leadership e suggerisce aree di sviluppo, con un report pronto per il colloquio di restituzione.",
+      "ageMin": 20,
+      "ageMax": 65,
+      "ageNote": null,
+      "duration": "20 min",
+      "administration": "Online, anche a distanza",
+      "scoring": "Report automatico",
+      "qualification": "HR",
+      "unit": "Prezzo per singolo report",
+      "priceCents": 9500,
+      "salePriceCents": 8360,
+      "image": {
+        "src": "photos/stilo.jpg",
+        "alt": "Un gruppo di lavoro discute documenti attorno a un tavolo",
+        "width": 1600,
+        "height": 1200,
+        "credit": {
+          "author": "Andreea Avramescu",
+          "profile": "https://unsplash.com/@minakko",
+          "source": "https://unsplash.com/photos/people-reviewing-documents-in-workspace-wR56AUlEsE4"
+        }
+      }
+    },
+    {
+      "id": "verna",
+      "kind": "test",
+      "code": "VERNA",
+      "name": "Batteria di ragionamento Verbale, Numerico e Astratto",
+      "category": "lavoro",
+      "format": "digitale",
+      "authors": [
+        "Ilaria Montefusco",
+        "Corrado Lanfranchi"
+      ],
+      "summary": "Tre prove a tempo per selezione e sviluppo: ragionamento verbale, numerico e astratto in 35 minuti.",
+      "ageMin": 18,
+      "ageMax": 65,
+      "ageNote": null,
+      "duration": "35 min",
+      "administration": "Collettiva o a distanza con supervisione",
+      "scoring": "Automatico, report per candidato e selezionatore",
+      "qualification": "HR",
+      "unit": "Licenza da 100 somministrazioni",
+      "priceCents": 148000,
+      "salePriceCents": 111000,
+      "image": {
+        "src": "photos/verna.jpg",
+        "alt": "Un uomo riflette davanti al computer portatile, con la mano sul mento",
+        "width": 1600,
+        "height": 1200,
+        "credit": {
+          "author": "bruce mars",
+          "profile": "https://unsplash.com/@brucemars",
+          "source": "https://unsplash.com/photos/man-holding-his-chin-facing-laptop-computer-xj8qrWvuOEs"
+        }
+      }
+    },
+    {
+      "id": "fad-2701",
+      "kind": "course",
+      "code": "FAD-2701",
+      "name": "Valutazione neuropsicologica dell'adulto: dalla somministrazione al referto",
+      "category": "formazione",
+      "format": "corso-online",
+      "teacher": "Dott.ssa Livia Santacroce",
+      "summary": "Quattro incontri in diretta con casi simulati: scegliere le prove, leggere i punteggi, scrivere un referto chiaro.",
+      "delivery": "live",
+      "startDate": "2027-03-12",
+      "location": null,
+      "hours": 12,
+      "schedule": "4 incontri da 3 ore",
+      "ecm": 15,
+      "certificate": null,
+      "seats": {
+        "available": 14,
+        "total": 40
+      },
+      "audience": "Psicologi, psicoterapeuti, medici",
+      "priceCents": 24000,
+      "salePriceCents": 19200,
+      "image": {
+        "src": "photos/fad-2701.jpg",
+        "alt": "Professionista con le cuffie che segue una lezione online al computer, con quaderno ed evidenziatori sulla scrivania",
+        "width": 1600,
+        "height": 1200,
+        "credit": {
+          "author": "Julio Lopez",
+          "profile": "https://unsplash.com/@juliolopez",
+          "source": "https://unsplash.com/photos/woman-wearing-headphones-working-on-a-laptop-oI-VGnxcYes"
+        }
+      }
+    },
+    {
+      "id": "res-2702",
+      "kind": "course",
+      "code": "RES-2702",
+      "name": "DSA in pratica: dalla valutazione alla relazione clinica",
+      "category": "formazione",
+      "format": "in-presenza",
+      "teacher": "Dott. Tommaso Belfiore",
+      "summary": "Due giornate di laboratorio su casi simulati: dalla scelta delle prove alla relazione per famiglia e scuola.",
+      "delivery": "in-presenza",
+      "startDate": "2027-04-09",
+      "location": "Firenze",
+      "hours": 16,
+      "schedule": "2 giornate",
+      "ecm": 20,
+      "certificate": null,
+      "seats": {
+        "available": 6,
+        "total": 24
+      },
+      "audience": "Psicologi, logopedisti, TNPEE, neuropsichiatri infantili",
+      "priceCents": 44000,
+      "salePriceCents": 39600,
+      "image": {
+        "src": "photos/res-2702.jpg",
+        "alt": "Professionisti seduti attorno a un lungo tavolo durante un laboratorio di gruppo",
+        "width": 1600,
+        "height": 1200,
+        "credit": {
+          "author": "Redd Francisco",
+          "profile": "https://unsplash.com/@reddfrancisco",
+          "source": "https://unsplash.com/photos/talking-people-sitting-beside-table-PTRzqc_h1r4"
+        }
+      }
+    },
+    {
+      "id": "fad-2703",
+      "kind": "course",
+      "code": "FAD-2703",
+      "name": "Assessment e selezione: leggere un profilo psicometrico",
+      "category": "formazione",
+      "format": "corso-online",
+      "teacher": "Dott. Corrado Lanfranchi",
+      "summary": "Per chi lavora nelle risorse umane: interpretare un report, restituirlo al candidato, evitare gli errori più comuni.",
+      "delivery": "on-demand",
+      "startDate": "2027-01-22",
+      "location": null,
+      "hours": 6,
+      "schedule": "Accesso per 12 mesi",
+      "ecm": null,
+      "certificate": "Attestato di partecipazione",
+      "seats": null,
+      "audience": "HR, recruiter, psicologi del lavoro",
+      "priceCents": 19000,
+      "salePriceCents": 13300,
+      "image": {
+        "src": "photos/fad-2703.jpg",
+        "alt": "Colloquio di lavoro in un ufficio luminoso: una selezionatrice prende appunti di fronte a un candidato",
+        "width": 1600,
+        "height": 1200,
+        "credit": {
+          "author": "Vitaly Gariev",
+          "profile": "https://unsplash.com/@silverkblack",
+          "source": "https://unsplash.com/photos/woman-in-glasses-interviews-man-at-office-desk-pg2eJwNVpvY"
+        }
+      }
+    },
+    {
+      "id": "res-2704",
+      "kind": "course",
+      "code": "RES-2704",
+      "name": "Dal dato al profilo: laboratorio intensivo di assessment clinico",
+      "category": "formazione",
+      "format": "in-presenza",
+      "teacher": "Dott.ssa Agnese Fontanarosa",
+      "summary": "Cinque weekend in aula per integrare colloquio, test e osservazione in un profilo clinico coerente.",
+      "delivery": "in-presenza",
+      "startDate": "2027-09-24",
+      "location": "Milano",
+      "hours": 60,
+      "schedule": "5 weekend",
+      "ecm": 50,
+      "certificate": null,
+      "seats": {
+        "available": 7,
+        "total": 20
+      },
+      "audience": "Psicologi e psicoterapeuti",
+      "priceCents": 190000,
+      "salePriceCents": 161500,
+      "image": {
+        "src": "photos/res-2704.jpg",
+        "alt": "Partecipanti attenti in un'aula luminosa durante una sessione di formazione",
+        "width": 1600,
+        "height": 1200,
+        "credit": {
+          "author": "Timur Shakerzianov",
+          "profile": "https://unsplash.com/@shaker_jpg",
+          "source": "https://unsplash.com/photos/adults-attending-workshop-in-sunlit-room-yCs7YTwEw2w"
+        }
+      }
+    }
+  ],
+  "hero": {
+    "image": {
+      "src": "hero/hero.jpg",
+      "credit": {
+        "author": "Ahmadreza Rezaie",
+        "profile": "https://unsplash.com/@ahmdrzarzai",
+        "source": "https://unsplash.com/photos/teacher-showing-a-child-numbers-with-her-fingers-eJVnBi25Xms"
+      }
+    }
+  }
+}

@@ -1,0 +1,274 @@
+.bento
+  position: relative
+  isolation: isolate
+  overflow: clip
+  background-color: var(--color-ink-deep)
+  padding-top: 5rem
+  padding-bottom: 5rem
+  color: #fff
+  +mq(md)
+    padding-top: 7rem
+    padding-bottom: 7rem
+
+  &__backdrop
+    position: absolute
+    inset: 0
+    z-index: -10
+    background: radial-gradient(50% 45% at 12% 0%, rgba(14, 165, 233, 0.16), transparent 70%), radial-gradient(45% 50% at 100% 100%, rgba(27, 79, 138, 0.45), transparent 70%)
+
+  &__statement
+    margin-top: 2.5rem
+    max-width: 56rem
+    font-family: var(--font-display)
+    font-size: unquote('clamp(1.5rem, 1.05rem + 1.9vw, 2.75rem)')
+    line-height: 1.2
+    font-weight: 500
+    letter-spacing: -0.025em
+    text-wrap: balance
+
+  &__grid
+    margin-top: 3.5rem
+    display: grid
+    gap: 1rem
+    +mq(md)
+      margin-top: 5rem
+      grid-template-columns: repeat(2, minmax(0, 1fr))
+      gap: 1.25rem
+      grid-template-areas: 'ages ages' 'time time' 'formats formats' 'training training' 'quote quote'
+    +mq(lg)
+      grid-template-columns: repeat(4, minmax(0, 1fr))
+      grid-template-areas: 'ages ages time time' 'ages ages formats formats' 'training training training quote'
+
+  &__tile
+    position: relative
+    display: flex
+    flex-direction: column
+    gap: 1rem
+    overflow: clip
+    border-radius: 1.5rem
+
+  &__tile--glass
+    border: 1px solid rgba(255, 255, 255, 0.1)
+    background-color: rgba(255, 255, 255, 0.04)
+    padding: 1.5rem
+    +mq(md)
+      padding: 1.75rem
+
+  &__tile--ages
+    border: 1px solid rgba(255, 255, 255, 0.1)
+    background-image: linear-gradient(160deg, rgba(14, 165, 233, 0.18), rgba(255, 255, 255, 0.03) 60%)
+    padding: 1.5rem
+    +mq(md)
+      padding: 1.75rem
+      grid-area: ages
+
+  &__tile--time
+    +mq(md)
+      grid-area: time
+
+  &__tile--formats
+    +mq(md)
+      grid-area: formats
+    +mq(lg)
+      flex-direction: row
+      align-items: flex-end
+      justify-content: space-between
+      gap: 2rem
+
+  &__tile--training
+    min-height: 20rem
+    justify-content: flex-end
+    +mq(md)
+      grid-area: training
+
+  &__tile--quote
+    background-color: var(--color-surface)
+    padding: 1.5rem
+    color: var(--color-ink)
+    +mq(md)
+      padding: 1.75rem
+      grid-area: quote
+
+  &__title
+    font-family: var(--font-display)
+    font-size: 1.5rem
+    line-height: 1.25
+    font-weight: 600
+    letter-spacing: -0.025em
+
+  &__title--end
+    margin-top: auto
+
+  &__text
+    color: var(--color-ink-muted)
+
+  &__tile--ages &__text
+    max-width: 28rem
+
+  &__text--soft
+    margin-top: 0.5rem
+    color: var(--color-ink-soft)
+
+  &__text--muted
+    color: var(--color-muted)
+
+  &__ages
+    margin-top: auto
+    display: flex
+    flex-direction: column
+    gap: 0.625rem
+    padding-top: 1.5rem
+
+  &__age-row,
+  &__age-axis
+    display: grid
+    grid-template-columns: 6.25rem minmax(0, 1fr)
+    gap: 0.75rem
+
+  &__age-row
+    align-items: center
+
+  &__age-code
+    font-family: var(--font-display)
+    font-size: 0.875rem
+    line-height: 1.25
+    font-weight: 600
+
+  &__age-axis
+    t-xs()
+    font-variant-numeric: tabular-nums
+    color: var(--color-ink-muted)
+
+  &__age-ticks
+    display: flex
+    justify-content: space-between
+
+  &__figure
+    display: flex
+    align-items: baseline
+    gap: 0.5rem
+    font-family: var(--font-display)
+
+  &__figure-value
+    font-size: unquote('clamp(2.5rem, 2rem + 2vw, 3.5rem)')
+    line-height: 1
+    font-weight: 600
+    letter-spacing: -0.025em
+
+  &__figure-unit
+    t-lg()
+    color: var(--color-ink-muted)
+
+  &__ruler-labels
+    margin-top: 0.5rem
+    display: flex
+    justify-content: space-between
+    t-xs()
+    font-variant-numeric: tabular-nums
+    color: var(--color-ink-muted)
+
+  &__formats-text
+    display: flex
+    flex-direction: column
+    gap: 0.5rem
+    +mq(lg)
+      max-width: 20rem
+
+  &__badges
+    display: flex
+    flex-wrap: wrap
+    gap: 0.5rem
+    +mq(lg)
+      max-width: 20rem
+      justify-content: flex-end
+
+  &__badge
+    display: inline-flex
+
+  &__picture
+    display: contents
+
+  &__photo
+    position: absolute
+    inset: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+    color: transparent
+
+  &__scrim
+    position: absolute
+    inset: 0
+    background-image: linear-gradient(to top, rgba(10, 33, 64, 0.94), rgba(10, 33, 64, 0.5) 55%, rgba(10, 33, 64, 0.15))
+
+  &__training
+    position: relative
+    display: flex
+    flex-wrap: wrap
+    align-items: flex-end
+    justify-content: space-between
+    gap: 1.5rem
+    padding: 1.5rem
+    +mq(md)
+      padding: 1.75rem
+
+  &__training-text
+    max-width: 28rem
+
+  &__stat
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    gap: 0.25rem
+
+  &__stat-value
+    font-family: var(--font-display)
+    font-size: 3.75rem
+    line-height: 1
+    font-weight: 600
+    letter-spacing: -0.025em
+
+  &__stat-label
+    t-sm()
+    color: var(--color-ink-soft)
+
+  &__receipt
+    display: flex
+    flex-direction: column
+    gap: 0.5rem
+    border-radius: 1rem
+    border: 1px solid var(--color-border-soft)
+    background-color: var(--color-page)
+    padding: 1rem
+    t-sm()
+
+  &__receipt-line,
+  &__receipt-total
+    display: flex
+    justify-content: space-between
+    gap: 0.75rem
+
+  &__receipt-item
+    font-weight: 600
+
+  &__receipt-price
+    font-variant-numeric: tabular-nums
+    color: var(--color-muted)
+
+  &__receipt-total
+    border-top: 1px solid var(--color-border-soft)
+    padding-top: 0.5rem
+    font-weight: 600
+
+  &__receipt-sum
+    font-variant-numeric: tabular-nums
+
+  &__receipt-cta
+    margin-top: 0.25rem
+    display: inline-flex
+    justify-content: center
+    border-radius: var(--radius-md)
+    background-color: var(--color-primary)
+    padding: 0.5rem 0.75rem
+    font-weight: 600
+    color: #fff

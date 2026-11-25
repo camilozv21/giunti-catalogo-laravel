@@ -1,0 +1,41 @@
+// Fallback metrics as next/font computes them: the swap to the web font does not shift the layout.
+@css {
+  @font-face {
+    font-family: "Inter";
+    src: url("/fonts/inter-latin-wght-normal.woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Fraunces";
+    src: url("/fonts/fraunces-latin-wght-normal.woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Inter Fallback";
+    src: local("Arial");
+    ascent-override: 89.79%;
+    descent-override: 22.36%;
+    line-gap-override: 0%;
+    size-adjust: 107.89%;
+  }
+
+  @font-face {
+    font-family: "Fraunces Fallback";
+    src: local("Times New Roman");
+    ascent-override: 77.2%;
+    descent-override: 20.13%;
+    line-gap-override: 0%;
+    size-adjust: 126.68%;
+  }
+
+  :root {
+    --font-sans: "Inter", "Inter Fallback", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    --font-display: "Fraunces", "Fraunces Fallback", Georgia, "Times New Roman", serif;
+  }
+}

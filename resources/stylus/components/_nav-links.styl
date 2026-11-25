@@ -1,0 +1,52 @@
+.nav-links
+  &--header
+    display: flex
+    align-items: center
+    gap: 0.25rem
+
+  &--header &__link
+    display: inline-flex
+    min-height: 2.75rem
+    align-items: center
+    border-radius: var(--radius-md)
+    padding-right: 0.75rem
+    padding-left: 0.75rem
+    font-size: 0.9375rem
+    font-weight: 500
+    color: var(--color-ink)
+    transition-colors()
+    +hover()
+      background-color: var(--color-primary-tint)
+      color: var(--color-primary)
+
+  &--menu
+    display: flex
+    flex-direction: column
+
+  &--menu &__link
+    display: flex
+    min-height: 3rem
+    align-items: center
+    border-bottom: 1px solid var(--color-border-soft)
+    t-lg()
+    font-weight: 600
+    color: var(--color-ink)
+    +hover()
+      color: var(--color-primary)
+
+  &--footer
+    display: flex
+    flex-direction: column
+    gap: 0.25rem
+
+  &--footer &__link
+    display: inline-flex
+    min-height: 2.5rem
+    align-items: center
+    color: var(--color-ink-soft)
+    text-underline-offset: 4px
+    +hover()
+      color: #fff
+      text-decoration-line: underline
+    &:focus-visible
+      outline-color: var(--color-accent)

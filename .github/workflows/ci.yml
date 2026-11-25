@@ -1,0 +1,58 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Lint, build and tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.5"
+          tools: composer:v2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: composer install --no-interaction --prefer-dist
+      - run: cp .env.example .env && php artisan key:generate
+      - run: vendor/bin/pint --test
+      - run: npm ci --no-audit --no-fund
+      # The feature tests render the page, which needs mix-manifest.json.
+      - run: npm run build
+      - run: npm run test:js
+      - run: php artisan test
+
+  image:
+    name: Production image (as deployed on Railway)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t catalogo .
+      # Only the variables Railway is given: locale and the rest must come from the image itself.
+      - name: Smoke test
+        run: |
+          docker run -d --name app -p 8080:8080 -e PORT=8080 \
+            -e APP_KEY="base64:$(openssl rand -base64 32)" catalogo
+          for i in $(seq 1 30); do curl -fs -o /dev/null http://localhost:8080/ && break; sleep 1; done
+          curl -fs http://localhost:8080/up > /dev/null
+          curl -fs http://localhost:8080/ | grep -q '<html lang="it"'
+          headers=$(curl -fs -D - -o /dev/null http://localhost:8080/)
+          ! echo "$headers" | grep -qi '^x-robots-tag'
+          curl -fs http://localhost:8080/robots.txt | grep -q '^Sitemap: http'
+          curl -fs http://localhost:8080/sitemap.xml | grep -q '<image:loc>'
+          echo "$headers" | grep -qi '^cache-control:.*public'
+          ! echo "$headers" | grep -qi '^set-cookie'
+          etag=$(echo "$headers" | tr -d '\r' | grep -i '^etag' | cut -d' ' -f2)
+          test "$(curl -s -o /dev/null -w '%{http_code}' -H "If-None-Match: $etag" http://localhost:8080/)" = 304
+      - if: failure()
+        run: docker logs app

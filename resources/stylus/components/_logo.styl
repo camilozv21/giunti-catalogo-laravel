@@ -1,0 +1,29 @@
+.logo
+  display: inline-flex
+  align-items: center
+  gap: 0.625rem
+
+  &__mark
+    width: 2.25rem
+    height: 2.25rem
+
+  &__text
+    display: flex
+    flex-direction: column
+    font-size: 0.9375rem
+    line-height: 1.1
+    letter-spacing: -0.025em
+    color: var(--color-ink)
+    +mq(sm)
+      flex-direction: row
+      gap: 0.25rem
+      font-size: 1rem
+
+  &__first
+    font-weight: 700
+
+  &__rest
+    font-weight: 500
+
+  &--light &__text
+    color: #fff

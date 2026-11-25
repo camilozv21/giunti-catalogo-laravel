@@ -1,0 +1,68 @@
+{
+  "$comment": "z → T (50±10), standard score (100±15), percentile (normal CDF, rounded; <1 and >99 at the tails) and band.",
+  "cases": [
+    {
+      "z": -3,
+      "t": 20,
+      "standard": 55,
+      "percentile": "<1",
+      "band": "molto-inferiore"
+    },
+    {
+      "z": -2,
+      "t": 30,
+      "standard": 70,
+      "percentile": "2",
+      "band": "inferiore"
+    },
+    {
+      "z": -1,
+      "t": 40,
+      "standard": 85,
+      "percentile": "16",
+      "band": "media"
+    },
+    {
+      "z": 0,
+      "t": 50,
+      "standard": 100,
+      "percentile": "50",
+      "band": "media"
+    },
+    {
+      "z": 1,
+      "t": 60,
+      "standard": 115,
+      "percentile": "84",
+      "band": "media"
+    },
+    {
+      "z": 1.5,
+      "t": 65,
+      "standard": 123,
+      "percentile": "93",
+      "band": "superiore"
+    },
+    {
+      "z": 2,
+      "t": 70,
+      "standard": 130,
+      "percentile": "98",
+      "band": "superiore"
+    },
+    {
+      "z": 2.1,
+      "t": 71,
+      "standard": 132,
+      "percentile": "98",
+      "band": "molto-superiore"
+    },
+    {
+      "z": 3,
+      "t": 80,
+      "standard": 145,
+      "percentile": ">99",
+      "band": "molto-superiore"
+    }
+  ]
+}

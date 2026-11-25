@@ -1,0 +1,114 @@
+// Tighter top than the other sections: when the hero button lands here, the first row of cards must show.
+.catalog
+  padding-top: 3.5rem
+  padding-bottom: 5rem
+  +mq(md)
+    padding-top: 4rem
+    padding-bottom: 7rem
+
+  &__browser
+    margin-top: 2rem
+    display: flex
+    flex-direction: column
+    gap: 1.5rem
+
+  &__toolbar
+    display: flex
+    flex-direction: column
+    gap: 0.75rem
+
+  &__controls
+    display: flex
+    flex-direction: column
+    gap: 0.75rem
+    +mq(lg)
+      flex-direction: row
+      align-items: center
+      justify-content: space-between
+      gap: 1.5rem
+
+  // Fixed min-height: the controls never move when the reset button appears.
+  &__summary
+    display: flex
+    min-height: 2.75rem
+    flex-wrap: wrap
+    align-items: center
+    column-gap: 0.75rem
+    row-gap: 0.25rem
+    border-bottom: 1px solid var(--color-border-soft)
+    padding-bottom: 0.75rem
+
+  &__status
+    margin-right: auto
+    t-sm()
+    font-weight: 500
+    color: var(--color-muted)
+
+  &__status--invalid
+    color: var(--color-danger)
+
+  // On phones the VAT note wraps to its own line, so the count and the reset share the first.
+  &__vat
+    order: 99
+    flex-basis: 100%
+    t-sm()
+    color: var(--color-muted)
+    +mq(sm)
+      order: 0
+      flex-basis: auto
+
+  &__reset
+    margin-top: -0.5rem
+    margin-bottom: -0.5rem
+
+  &__grid
+    display: grid
+    gap: 1.5rem
+    +mq(md)
+      grid-template-columns: repeat(2, minmax(0, 1fr))
+    +mq(lg)
+      grid-template-columns: repeat(3, minmax(0, 1fr))
+
+  &__item
+    grid-row: span 4
+    display: grid
+    grid-template-rows: subgrid
+
+.age-field
+  display: flex
+  flex-shrink: 0
+  align-items: center
+  gap: 0.625rem
+
+  &__label
+    t-sm()
+    font-weight: 600
+    color: var(--color-ink)
+
+  &__input
+    width: 4rem
+    height: 2.75rem
+    border-radius: var(--radius-md)
+    border: 1px solid var(--color-border-control)
+    background-color: var(--color-surface)
+    padding-right: 0.5rem
+    padding-left: 0.5rem
+    text-align: center
+    t-base()
+    font-weight: 600
+    font-variant-numeric: tabular-nums
+    color: var(--color-ink)
+    transition-colors()
+    +hover()
+      border-color: var(--color-primary)
+    &:focus
+      border-color: var(--color-primary)
+    &[aria-invalid="true"]
+      border-color: var(--color-danger)
+      background-color: rgba(254, 243, 242, 0.5)
+      +hover()
+        border-color: var(--color-danger)
+
+  &__unit
+    t-sm()
+    color: var(--color-muted)

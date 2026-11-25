@@ -1,0 +1,46 @@
+:root
+  color-scheme: light
+  // The sticky header's full height, bottom border included.
+  --header-block: unquote("calc(var(--header-height-compact) + 1px)")
+  +mq(md)
+    --header-block: unquote("calc(var(--header-height) + 1px)")
+
+html
+  scroll-behavior: smooth
+  scroll-padding-top: unquote("calc(var(--header-block) + 1.5rem)")
+  // Keeps focused elements clear of the floating demo button.
+  scroll-padding-bottom: 5rem
+  -webkit-text-size-adjust: 100%
+  text-size-adjust: 100%
+
+body
+  background-color: var(--color-page)
+  color: var(--color-ink)
+  font-family: var(--font-sans)
+  font-size: 1rem
+  line-height: 1.6
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  font-optical-sizing: auto
+
+:focus-visible
+  outline: 2px solid var(--color-primary)
+  outline-offset: 2px
+
+::selection
+  background-color: var(--color-sky-tint)
+  color: var(--color-ink)
+
+@media (prefers-reduced-motion: reduce)
+  html
+    scroll-behavior: auto
+
+  *,
+  *::before,
+  *::after
+    animation-duration: 0.01ms !important
+    animation-iteration-count: 1 !important
+    transition-duration: 0.01ms !important
+
+.main
+  outline: none

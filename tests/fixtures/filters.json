@@ -1,0 +1,27 @@
+{
+  "$comment": "category: 'tutti' or a category slug; query: free text; age: null or an integer. With an age set, only tests whose range contains it are shown. The UI clears age when 'formazione' is selected. ageInput: what the age field accepts (an integer from 0 to 120, empty = any age); 'invalid' keeps the previous results and shows a hint.",
+  "cases": [
+    { "filters": { "category": "tutti", "query": "", "age": null }, "ids": "all" },
+    { "filters": { "category": "formazione", "query": "", "age": null }, "ids": ["fad-2701", "res-2702", "fad-2703", "res-2704"] },
+    { "filters": { "category": "scuola", "query": "", "age": null }, "ids": ["lesca", "arca", "cifra"] },
+    { "filters": { "category": "tutti", "query": "", "age": 8 }, "ids": ["lesca", "arca", "cifra"] },
+    { "filters": { "category": "tutti", "query": "", "age": 15 }, "ids": ["ired", "arca"] },
+    { "filters": { "category": "tutti", "query": "", "age": 40 }, "ids": ["orma", "ired", "stilo", "verna"] },
+    { "filters": { "category": "clinica", "query": "", "age": 75 }, "ids": ["orma", "ired", "soglia"] },
+    { "filters": { "category": "formazione", "query": "assessment", "age": null }, "ids": ["fad-2703", "res-2704"] },
+    { "filters": { "category": "clinica", "query": "assessment", "age": null }, "ids": [] },
+    { "filters": { "category": "tutti", "query": "orma", "age": 40 }, "ids": ["orma"] }
+  ],
+  "ageInput": [
+    { "input": "", "expected": null },
+    { "input": "  ", "expected": null },
+    { "input": "8", "expected": 8 },
+    { "input": " 72 ", "expected": 72 },
+    { "input": "0", "expected": 0 },
+    { "input": "120", "expected": 120 },
+    { "input": "121", "expected": "invalid" },
+    { "input": "-3", "expected": "invalid" },
+    { "input": "7.5", "expected": "invalid" },
+    { "input": "otto", "expected": "invalid" }
+  ]
+}

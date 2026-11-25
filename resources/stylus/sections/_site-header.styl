@@ -1,0 +1,65 @@
+.site-header
+  position: sticky
+  top: 0
+  z-index: 40
+  border-bottom: 1px solid var(--color-border-soft)
+  background-color: rgba(255, 255, 255, 0.95)
+  box-shadow: var(--shadow-header)
+  -webkit-backdrop-filter: blur(12px)
+  backdrop-filter: blur(12px)
+
+  &__inner
+    margin-right: auto
+    margin-left: auto
+    display: grid
+    width: 100%
+    max-width: var(--container-page)
+    grid-template-columns: 1fr auto
+    grid-template-areas: 'logo actions' 'search search'
+    align-items: center
+    column-gap: 0.75rem
+    row-gap: 0.5rem
+    height: var(--header-height-compact)
+    padding: 0.5rem var(--gutter)
+    +mq(md)
+      height: var(--header-height)
+      grid-template-columns: auto minmax(0, 1fr) auto
+      grid-template-areas: 'logo search actions'
+      padding-top: 0
+      padding-bottom: 0
+    +mq(lg)
+      grid-template-columns: auto auto minmax(0, 1fr) auto
+      grid-template-areas: 'logo nav search actions'
+      column-gap: 1.5rem
+
+  &__brand
+    grid-area: logo
+    justify-self: start
+    border-radius: var(--radius-md)
+
+  &__nav
+    grid-area: nav
+    display: none
+    +mq(lg)
+      display: block
+
+  &__search
+    grid-area: search
+    +mq(md)
+      max-width: 28rem
+    +mq(lg)
+      margin-left: auto
+      width: 100%
+      max-width: 24rem
+    +mq(xl)
+      max-width: 28rem
+
+  &__actions
+    grid-area: actions
+    display: flex
+    align-items: center
+    gap: 0.25rem
+
+  &__menu
+    +mq(lg)
+      display: none

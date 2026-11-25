@@ -1,0 +1,22 @@
+{
+  "$comment": "Search matches product code + name, case-, accent- and apostrophe-insensitive. 'all' means every product.",
+  "normalize": [
+    { "input": "Età", "expected": "eta" },
+    { "input": "  ORMA  ", "expected": "orma" },
+    { "input": "l’adulto", "expected": "l'adulto" },
+    { "input": "LESCA 6–11", "expected": "lesca 6-11" },
+    { "input": "Perché  così", "expected": "perche cosi" }
+  ],
+  "queries": [
+    { "q": "", "ids": "all" },
+    { "q": "orma", "ids": ["orma"] },
+    { "q": "ORMA", "ids": ["orma"] },
+    { "q": "memoria", "ids": ["orma"] },
+    { "q": "l’adulto", "ids": ["orma", "fad-2701"] },
+    { "q": "6-11", "ids": ["lesca"] },
+    { "q": "leadership", "ids": ["stilo"] },
+    { "q": "valutazione", "ids": ["fad-2701", "res-2702"] },
+    { "q": "assessment", "ids": ["fad-2703", "res-2704"] },
+    { "q": "xyz", "ids": [] }
+  ]
+}

@@ -1,0 +1,78 @@
+.btn
+  display: inline-flex
+  cursor: pointer
+  align-items: center
+  justify-content: center
+  gap: 0.5rem
+  border-radius: var(--radius-md)
+  font-weight: 600
+  white-space: nowrap
+  user-select: none
+  transition-property: background-color, border-color, color, translate
+  transition-duration: 150ms
+  transition-timing-function: var(--ease-standard)
+
+  &--md
+    min-height: 2.75rem
+    padding-right: 1rem
+    padding-left: 1rem
+    t-sm()
+
+  &--lg
+    min-height: 3rem
+    padding-right: 1.5rem
+    padding-left: 1.5rem
+    t-base()
+
+  &--icon
+    width: 2.75rem
+    height: 2.75rem
+
+  &--block
+    width: 100%
+
+  &--primary
+    background-color: var(--color-primary)
+    color: #fff
+    +hover()
+      background-color: var(--color-primary-strong)
+    &:active
+      translate: 0 1px
+
+  // On dark surfaces only: ink-deep on the accent is 5.81:1.
+  &--accent
+    background-color: var(--color-accent)
+    color: var(--color-ink-deep)
+    +hover()
+      background-color: var(--color-accent-soft)
+    &:active
+      translate: 0 1px
+
+  &--secondary
+    border: 1px solid var(--color-border-control)
+    background-color: var(--color-surface)
+    color: var(--color-primary)
+    +hover()
+      border-color: var(--color-primary)
+      background-color: var(--color-primary-tint)
+
+  &--ghost
+    color: var(--color-ink)
+    +hover()
+      background-color: var(--color-primary-tint)
+
+  &--link
+    color: var(--color-primary)
+    +hover()
+      background-color: var(--color-primary-tint)
+
+  &[data-state="added"]
+    border-color: var(--color-success)
+    background-color: var(--color-success)
+    color: #fff
+    +hover()
+      background-color: var(--color-success)
+
+  &:disabled
+    cursor: progress
+    opacity: 0.8

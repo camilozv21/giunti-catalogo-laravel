@@ -1,0 +1,25 @@
+{
+  "$comment": "Values are trimmed before validation. Error values are keys of copy.it.json > contact.errors; messageShort carries the number of missing characters.",
+  "cases": [
+    {
+      "input": { "name": "", "email": "", "message": "" },
+      "errors": { "name": "nameRequired", "email": "emailRequired", "message": "messageRequired" }
+    },
+    {
+      "input": { "name": "A", "email": "giulia", "message": "Ciao" },
+      "errors": { "name": "nameShort", "email": "emailInvalid", "message": { "key": "messageShort", "missing": 6 } }
+    },
+    {
+      "input": { "name": "  G  ", "email": "giulia@esempio", "message": "123456789" },
+      "errors": { "name": "nameShort", "email": "emailInvalid", "message": { "key": "messageShort", "missing": 1 } }
+    },
+    {
+      "input": { "name": "Al", "email": "al@esempio.it", "message": "1234567890" },
+      "errors": {}
+    },
+    {
+      "input": { "name": "Giulia Bianchi", "email": " giulia.bianchi@studio-rossi.it ", "message": "Cerco uno strumento di screening." },
+      "errors": {}
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+.contact
+  position: relative
+  isolation: isolate
+  overflow: clip
+  background-color: var(--color-ink)
+  padding-top: 5rem
+  padding-bottom: 5rem
+  +mq(md)
+    padding-top: 7rem
+    padding-bottom: 7rem
+
+  &__backdrop
+    position: absolute
+    inset: 0
+    z-index: -10
+    background: radial-gradient(55% 60% at 100% 0%, rgba(14, 165, 233, 0.2), transparent 70%), radial-gradient(45% 55% at 0% 100%, rgba(10, 33, 64, 0.9), transparent 70%)
+
+  &__inner
+    display: grid
+    gap: 3rem
+    +mq(lg)
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr)
+      align-items: start
+      gap: 4rem
+
+  &__heading
+    +mq(lg)
+      position: sticky
+      top: unquote('calc(var(--header-height) + 3rem)')
+
+  &__card
+    border-radius: 1rem
+    background-color: var(--color-surface)
+    padding: 1.5rem
+    box-shadow: 0 40px 80px -40px rgba(2, 10, 24, 0.9)
+    +mq(md)
+      padding: 2.25rem
+
+  &__form
+    display: flex
+    flex-direction: column
+    gap: 1.25rem
+
+  &__required
+    t-sm()
+    color: var(--color-muted)
+
+  &__submit
+    align-self: flex-start
+
+  &__success
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    gap: 0.75rem
+    outline: none
+
+  &__success-icon
+    display: inline-flex
+    width: 3rem
+    height: 3rem
+    align-items: center
+    justify-content: center
+    border-radius: 9999px
+    background-color: var(--color-success-tint)
+    color: var(--color-success)
+
+  &__success-title
+    font-family: var(--font-display)
+    t-2xl()
+    font-weight: 600
+    color: var(--color-ink)
+
+  &__success-text
+    color: var(--color-ink)
+
+  &__success-demo
+    t-sm()
+    color: var(--color-muted)
+
+  &__again
+    margin-top: 0.5rem

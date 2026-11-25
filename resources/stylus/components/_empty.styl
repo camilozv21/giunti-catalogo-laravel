@@ -1,0 +1,59 @@
+.empty
+  border-radius: var(--radius-lg)
+  border: 1px dashed var(--color-border-control)
+  background-color: var(--color-surface)
+  padding: 3rem 1.5rem
+  text-align: center
+
+  &__icon
+    margin-right: auto
+    margin-left: auto
+    display: inline-flex
+    width: 3rem
+    height: 3rem
+    align-items: center
+    justify-content: center
+    border-radius: 9999px
+    background-color: var(--color-primary-tint)
+    color: var(--color-primary)
+
+  &__title
+    margin-top: 1rem
+    t-token(h3)
+    font-weight: 600
+    color: var(--color-ink)
+
+  &__text
+    margin-right: auto
+    margin-left: auto
+    margin-top: 0.5rem
+    max-width: 28rem
+    color: var(--color-muted)
+
+  &__suggestions
+    margin-top: 1.25rem
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+    gap: 0.5rem
+    t-sm()
+
+  &__suggestions-label
+    color: var(--color-muted)
+
+  &__chip
+    min-height: 2.25rem
+    cursor: pointer
+    border-radius: var(--radius-pill)
+    border: 1px solid var(--color-border-control)
+    padding-right: 0.75rem
+    padding-left: 0.75rem
+    font-weight: 500
+    color: var(--color-primary)
+    +hover()
+      border-color: var(--color-primary)
+      background-color: var(--color-primary-tint)
+
+  &__reset
+    margin-top: 1.5rem

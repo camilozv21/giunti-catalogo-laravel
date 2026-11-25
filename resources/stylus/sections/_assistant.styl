@@ -1,0 +1,53 @@
+.assistant
+  background-color: var(--color-surface)
+  padding-top: 5rem
+  padding-bottom: 5rem
+  +mq(md)
+    padding-top: 7rem
+    padding-bottom: 7rem
+
+  &__inner
+    display: grid
+    gap: 3rem
+    +mq(lg)
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr)
+      align-items: center
+      gap: 4rem
+
+  &__pick
+    margin-top: 2rem
+
+  &__pick-label
+    color: var(--color-accent-strong)
+
+  &__chips
+    margin-top: 0.75rem
+    display: flex
+    flex-wrap: wrap
+    gap: 0.5rem
+
+  &__chip
+    display: inline-flex
+    min-height: 2.75rem
+    cursor: pointer
+    align-items: center
+    border-radius: var(--radius-pill)
+    border: 1px solid var(--color-border-control)
+    background-color: var(--color-surface)
+    padding-right: 1rem
+    padding-left: 1rem
+    text-align: left
+    t-sm()
+    font-weight: 600
+    color: var(--color-ink)
+    transition-colors()
+    +hover()
+      border-color: var(--color-primary)
+      background-color: var(--color-primary-tint)
+    &[aria-pressed="true"]
+      border-color: var(--color-ink)
+      background-color: var(--color-ink)
+      color: #fff
+
+  &__cta
+    margin-top: 1rem

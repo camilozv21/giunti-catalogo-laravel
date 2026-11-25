@@ -1,0 +1,17 @@
+// Stylus 0.64 silently rewrites modern CSS:
+// - it evaluates min()/max()/clamp() to wrong values: wrap them in unquote() or keep them in @css blocks;
+// - space-separated rgb(r g b / a) comes out opaque: write rgba(r, g, b, a);
+// - color-mix() and media range syntax do not compile: keep them in @css blocks or use mq()/mq-below();
+// - vendors = official drops the obsolete -moz-/-o- @keyframes.
+vendors = official
+
+@import 'abstracts/_tokens'
+@import 'abstracts/_mixins'
+
+@import 'base/_fonts'
+@import 'base/_reset'
+@import 'base/_base'
+@import 'base/_utilities'
+
+@import 'components/*'
+@import 'sections/*'

@@ -1,0 +1,75 @@
+mq($name)
+  @media (min-width: $bp[$name])
+    {block}
+
+// `not all and` instead of range syntax (width < …), which Stylus cannot parse.
+mq-below($name)
+  @media not all and (min-width: $bp[$name])
+    {block}
+
+hover()
+  @media (hover: hover)
+    &:hover
+      {block}
+
+motion-safe()
+  @media (prefers-reduced-motion: no-preference)
+    {block}
+
+sr-only()
+  position: absolute
+  width: 1px
+  height: 1px
+  padding: 0
+  margin: -1px
+  overflow: hidden
+  clip-path: inset(50%)
+  white-space: nowrap
+  border-width: 0
+
+not-sr-only()
+  position: static
+  width: auto
+  height: auto
+  padding: 0
+  margin: 0
+  overflow: visible
+  clip-path: none
+  white-space: normal
+
+t-xs()
+  font-size: var(--text-xs)
+  line-height: var(--text-xs--line-height)
+  letter-spacing: var(--text-xs--letter-spacing)
+
+t-sm()
+  font-size: 0.875rem
+  line-height: unquote('calc(1.25 / 0.875)')
+
+t-base()
+  font-size: 1rem
+  line-height: 1.5
+
+t-lg()
+  font-size: 1.125rem
+  line-height: unquote('calc(1.75 / 1.125)')
+
+t-xl()
+  font-size: 1.25rem
+  line-height: 1.4
+
+t-2xl()
+  font-size: 1.5rem
+  line-height: unquote('calc(2 / 1.5)')
+
+t-token($name)
+  font-size: unquote('var(--text-' + $name + ')')
+  line-height: unquote('var(--text-' + $name + '--line-height)')
+  letter-spacing: unquote('var(--text-' + $name + '--letter-spacing)')
+
+transition-colors($duration = 150ms)
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke
+  transition-timing-function: unquote('cubic-bezier(0.4, 0, 0.2, 1)')
+  transition-duration: $duration
+
+$shadow-sm = 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1)

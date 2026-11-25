@@ -1,0 +1,24 @@
+{
+  "$comment": "Expected strings use U+00A0 (no-break space) before the euro sign, as Intl and PHP must both produce.",
+  "price": [
+    { "cents": 125000, "expected": "1.250,00 €" },
+    { "cents": 106250, "expected": "1.062,50 €" },
+    { "cents": 148000, "expected": "1.480,00 €" },
+    { "cents": 8360, "expected": "83,60 €" },
+    { "cents": 9500, "expected": "95,00 €" },
+    { "cents": 0, "expected": "0,00 €" },
+    { "cents": 123456789, "expected": "1.234.567,89 €" }
+  ],
+  "discount": [
+    { "priceCents": 125000, "salePriceCents": 106250, "percent": 15, "savingCents": 18750 },
+    { "priceCents": 9500, "salePriceCents": 8360, "percent": 12, "savingCents": 1140 },
+    { "priceCents": 15000, "salePriceCents": 10500, "percent": 30, "savingCents": 4500 },
+    { "priceCents": 49000, "salePriceCents": 36750, "percent": 25, "savingCents": 12250 }
+  ],
+  "date": [
+    { "iso": "2027-03-12", "expected": "12 marzo 2027" },
+    { "iso": "2027-01-22", "expected": "22 gennaio 2027" },
+    { "iso": "2027-04-09", "expected": "9 aprile 2027" },
+    { "iso": "2027-09-24", "expected": "24 settembre 2027" }
+  ]
+}

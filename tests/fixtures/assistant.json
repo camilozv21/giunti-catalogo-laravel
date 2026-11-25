@@ -1,0 +1,35 @@
+{
+  "$comment": "Expected catalogue matches for each scenario of the assistant (same filter rules as the grid).",
+  "cases": [
+    {
+      "scenario": "lettura",
+      "ids": [
+        "lesca",
+        "arca",
+        "cifra"
+      ]
+    },
+    {
+      "scenario": "memoria",
+      "ids": [
+        "orma",
+        "ired",
+        "soglia"
+      ]
+    },
+    {
+      "scenario": "selezione",
+      "ids": [
+        "stilo",
+        "verna"
+      ]
+    },
+    {
+      "scenario": "ecm",
+      "ids": [
+        "fad-2701",
+        "res-2702"
+      ]
+    }
+  ]
+}

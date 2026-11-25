@@ -1,0 +1,29 @@
+{
+  "$comment": "Tests each qualification can buy, in catalogue order: A → A; B → A, B; C → all tests; HR → HR.",
+  "total": 8,
+  "reach": {
+    "A": [
+      "CIFRA 4-8"
+    ],
+    "B": [
+      "SOGLIA",
+      "LESCA 6-11",
+      "ARCA 6-16",
+      "CIFRA 4-8"
+    ],
+    "C": [
+      "ORMA",
+      "IRED",
+      "SOGLIA",
+      "LESCA 6-11",
+      "ARCA 6-16",
+      "CIFRA 4-8",
+      "STILO",
+      "VERNA"
+    ],
+    "HR": [
+      "STILO",
+      "VERNA"
+    ]
+  }
+}

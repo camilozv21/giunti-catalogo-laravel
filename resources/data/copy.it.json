@@ -1,0 +1,388 @@
+{
+  "meta": {
+    "title": "Test psicologici e corsi di formazione | Giunti Psychometrics",
+    "description": "Test psicologici validati e corsi di formazione con crediti ECM per psicologi, scuole e organizzazioni. Filtra per ambito ed età e richiedi un preventivo.",
+    "siteName": "Giunti Psychometrics",
+    "shortName": "Giunti Psy",
+    "ogImageAlt": "Un'insegnante conta con le dita insieme a un bambino. Rigore scientifico, scelta semplice."
+  },
+  "a11y": {
+    "skipLink": "Vai al contenuto",
+    "external": "(si apre in una nuova scheda)"
+  },
+  "brand": {
+    "name": "Giunti Psychometrics",
+    "homeLabel": "Giunti Psychometrics, torna all'inizio"
+  },
+  "nav": {
+    "label": "Navigazione principale",
+    "test": "Test",
+    "formazione": "Formazione",
+    "risorse": "Risorse",
+    "contatti": "Contatti",
+    "menuOpen": "Apri il menu",
+    "menuClose": "Chiudi il menu",
+    "menuTitle": "Menu"
+  },
+  "login": {
+    "label": "Accedi",
+    "note": "L'area riservata non è disponibile in questa demo."
+  },
+  "search": {
+    "label": "Cerca nel catalogo",
+    "placeholder": "Cerca per nome o sigla",
+    "clear": "Cancella la ricerca",
+    "results": "Prodotti trovati",
+    "none": "Nessun prodotto per «{query}». Prova con un altro nome o una sigla."
+  },
+  "cart": {
+    "label": "Carrello",
+    "count": {
+      "zero": "Carrello, nessun articolo",
+      "one": "Carrello, 1 articolo",
+      "other": "Carrello, {count} articoli"
+    },
+    "title": "Il tuo carrello",
+    "close": "Chiudi il carrello",
+    "items": {
+      "one": "1 articolo",
+      "other": "{count} articoli"
+    },
+    "emptyTitle": "Il carrello è vuoto",
+    "emptyText": "Aggiungi un test o un corso: lo troverai qui.",
+    "emptyCta": "Esplora il catalogo",
+    "quantity": "Quantità",
+    "decrease": "Diminuisci la quantità di {name}",
+    "increase": "Aumenta la quantità di {name}",
+    "remove": "Rimuovi",
+    "removeLabel": "Rimuovi {name} dal carrello",
+    "subtotal": "Subtotale",
+    "saving": "Risparmio",
+    "total": "Totale",
+    "vat": "IVA esclusa",
+    "ecmTotal": "Crediti ECM nel carrello: {count}",
+    "qualificationNote": "Per acquistare i test è richiesta la qualifica indicata sulla scheda.",
+    "checkout": "Procedi all'ordine",
+    "checkoutNote": "Il pagamento non è disponibile in questa demo.",
+    "quote": "Richiedi un preventivo",
+    "continue": "Continua a esplorare",
+    "added": "{name} aggiunto al carrello",
+    "removed": "{name} rimosso dal carrello",
+    "quoteMessage": "Vorrei un preventivo per:"
+  },
+  "hero": {
+    "titleStart": "Rigore scientifico,",
+    "titleMark": "scelta semplice.",
+    "lead": "Test validati e formazione per chi valuta, cura ed educa le persone.",
+    "image": {
+      "alt": "Un'insegnante conta con le dita insieme a un bambino durante un'attività in classe."
+    },
+    "ctaPrimary": "Esplora il catalogo"
+  },
+  "trust": {
+    "label": "Giunti Psychometrics in breve",
+    "items": [
+      {
+        "value": "75+ anni",
+        "text": "di esperienza nella valutazione psicologica"
+      },
+      {
+        "value": "Europa e America Latina",
+        "text": "una presenza internazionale"
+      },
+      {
+        "value": "Euronext Growth Milan",
+        "text": "società quotata dal 2026"
+      }
+    ]
+  },
+  "assistant": {
+    "title": "Racconta il caso, il catalogo risponde.",
+    "lead": "Scegli una situazione tipica: età, ambito e qualifica restringono la scelta al posto tuo, come farebbe un consulente.",
+    "pick": "Scegli un caso",
+    "window": "Ricerca guidata",
+    "status": "Esempio",
+    "typing": "Sto cercando nel catalogo…",
+    "found": {
+      "one": "Ho trovato 1 strumento adatto:",
+      "other": "Ho trovato {count} strumenti adatti:"
+    },
+    "cta": "Mostrali nel catalogo",
+    "scenarios": [
+      {
+        "id": "lettura",
+        "label": "Bambino di 8 anni, fatica a leggere",
+        "message": "Ho un bambino di 8 anni che fatica a leggere e a scrivere. Da dove parto?",
+        "filters": {
+          "category": "scuola",
+          "age": 8,
+          "query": ""
+        }
+      },
+      {
+        "id": "memoria",
+        "label": "Memoria di una signora di 72 anni",
+        "message": "Devo valutare la memoria di una signora di 72 anni.",
+        "filters": {
+          "category": "clinica",
+          "age": 72,
+          "query": ""
+        }
+      },
+      {
+        "id": "selezione",
+        "label": "Selezione di un responsabile",
+        "message": "Stiamo selezionando un responsabile di reparto: cosa mi serve?",
+        "filters": {
+          "category": "lavoro",
+          "age": null,
+          "query": ""
+        }
+      },
+      {
+        "id": "ecm",
+        "label": "Corso ECM sulla valutazione",
+        "message": "Vorrei aggiornarmi sulla valutazione dell'adulto con crediti ECM.",
+        "filters": {
+          "category": "formazione",
+          "age": null,
+          "query": "valutazione"
+        }
+      }
+    ],
+    "applied": "Filtri del catalogo: {filters}"
+  },
+  "catalog": {
+    "title": "Test e corsi per professionisti",
+    "lead": "Scegli l'ambito, indica l'età della persona o cerca per nome e sigla.",
+    "filterLegend": "Filtra per categoria",
+    "all": "Tutti",
+    "count": {
+      "zero": "Nessun prodotto",
+      "one": "1 prodotto",
+      "other": "{count} prodotti"
+    },
+    "results": {
+      "zero": "Nessun risultato per «{query}»",
+      "one": "1 risultato per «{query}»",
+      "other": "{count} risultati per «{query}»"
+    },
+    "inCategory": "in {category}",
+    "testsForAge": {
+      "zero": "Nessun test per {age} anni",
+      "one": "1 test per {age} anni",
+      "other": "{count} test per {age} anni"
+    },
+    "age": {
+      "label": "Età",
+      "unit": "anni",
+      "value": "{age} anni",
+      "invalid": "Inserisci un'età tra 0 e 120 anni."
+    },
+    "reset": "Azzera i filtri",
+    "empty": {
+      "title": "Nessun risultato per «{query}»",
+      "titleNoQuery": "Nessun prodotto con questi filtri",
+      "text": "Controlla la sigla o prova con un termine più generale.",
+      "suggestions": "Prova con:",
+      "examples": [
+        "memoria",
+        "lettura",
+        "leadership"
+      ]
+    },
+    "vat": "Prezzi IVA esclusa"
+  },
+  "bento": {
+    "title": "Scegliere è facile quando tutto è chiaro.",
+    "statement": "Età, durata, qualifica e prezzo sono già sulla scheda: confronti gli strumenti in pochi secondi e scegli quello giusto per la persona che hai davanti.",
+    "ages": {
+      "title": "Un test per ogni età",
+      "text": "Dai {min} ai {max} anni: ogni scheda indica la fascia d'età per cui il test è pensato.",
+      "label": "Fasce d’età coperte dai test del catalogo",
+      "row": "{code}: da {min} a {max} anni",
+      "axis": "anni"
+    },
+    "time": {
+      "unit": "min",
+      "title": "Dallo screening alla batteria completa",
+      "text": "La durata della somministrazione è sempre sulla scheda."
+    },
+    "formats": {
+      "title": "Quattro modi di lavorare",
+      "text": "Carta, piattaforma digitale, corsi online o in aula."
+    },
+    "training": {
+      "title": "Formazione con crediti ECM",
+      "text": "Corsi online e in aula, con docenti esperti di valutazione.",
+      "statLabel": "crediti ECM nel corso più completo"
+    },
+    "quote": {
+      "title": "Preventivi per enti, scuole e aziende",
+      "text": "Il carrello diventa una richiesta di preventivo in un clic.",
+      "total": "Totale",
+      "request": "Richiedi un preventivo"
+    }
+  },
+  "interpreter": {
+    "title": "Interpreta un punteggio in un attimo.",
+    "lead": "Sposta il cursore: vedi dove cade il punteggio nella popolazione e come si traduce nelle scale più usate.",
+    "slider": "Punteggio z",
+    "readouts": {
+      "z": "Punteggio z",
+      "t": "Punto T",
+      "standard": "Punteggio standard",
+      "percentile": "Percentile"
+    },
+    "sentence": "Su 100 persone della stessa fascia d'età, circa {count} ottengono un punteggio più basso.",
+    "sentenceLow": "Meno di 1 persona su 100 ottiene un punteggio più basso.",
+    "sentenceHigh": "Più di 99 persone su 100 ottengono un punteggio più basso.",
+    "valueText": "z {z}, {percentile} percentile, {band}",
+    "bands": {
+      "molto-inferiore": "Molto inferiore alla media",
+      "inferiore": "Inferiore alla media",
+      "media": "Nella media",
+      "superiore": "Superiore alla media",
+      "molto-superiore": "Molto superiore alla media"
+    },
+    "note": "Esempio didattico su una distribuzione normale: l'interpretazione richiede le norme del test e il giudizio del professionista."
+  },
+  "card": {
+    "by": "di {names}",
+    "teacher": "Docente: {name}",
+    "age": "Età",
+    "ageRange": "{min}–{max} anni",
+    "duration": "Durata",
+    "qualification": "Qualifica",
+    "start": "Inizio",
+    "mode": "Modalità",
+    "availableFrom": "Disponibile dal {date}",
+    "hours": "{count} ore",
+    "ecm": {
+      "one": "1 credito ECM",
+      "other": "{count} crediti ECM"
+    },
+    "seats": "Posti: {available} su {total}",
+    "priceOriginal": "Prezzo originale",
+    "priceSale": "Prezzo scontato",
+    "discount": "−{percent}%",
+    "saving": "Risparmi {amount}",
+    "vat": "IVA esclusa",
+    "add": "Aggiungi al carrello",
+    "added": "Aggiunto",
+    "nameSuffix": " – {name}",
+    "more": "Scopri di più",
+    "formats": {
+      "cartaceo": "Cartaceo",
+      "digitale": "Digitale",
+      "corso-online": "Corso online",
+      "in-presenza": "In presenza"
+    },
+    "delivery": {
+      "live": "Online in diretta",
+      "on-demand": "On demand",
+      "in-presenza": "In presenza · {city}"
+    },
+    "qualifications": {
+      "A": "Qualifica A",
+      "B": "Qualifica B",
+      "C": "Qualifica C",
+      "HR": "Qualifica HR"
+    },
+    "addShort": "Aggiungi",
+    "addSuffix": " al carrello – {name}",
+    "ecmShort": "{count} ECM"
+  },
+  "resources": {
+    "title": "Chi può acquistare",
+    "lead": "Ogni test indica la qualifica professionale richiesta per l'acquisto.",
+    "share": {
+      "one": "{count} test su {total} del catalogo",
+      "other": "{count} test su {total} del catalogo"
+    },
+    "qualifications": [
+      {
+        "code": "A",
+        "text": "Strumenti utilizzabili sotto la supervisione di un professionista qualificato."
+      },
+      {
+        "code": "B",
+        "text": "Per professionisti con formazione specifica nella valutazione."
+      },
+      {
+        "code": "C",
+        "text": "Per psicologi e specialisti della valutazione: tutti i test."
+      },
+      {
+        "code": "HR",
+        "text": "Per professionisti delle risorse umane."
+      }
+    ],
+    "all": "Tutti i test del catalogo",
+    "opens": "Test acquistabili:"
+  },
+  "contact": {
+    "title": "Non sai quale strumento scegliere?",
+    "lead": "Raccontaci il contesto: ambito, età dei destinatari, obiettivo della valutazione. Ti aiutiamo a orientarti.",
+    "required": "Tutti i campi sono obbligatori.",
+    "fields": {
+      "name": {
+        "label": "Nome",
+        "hint": "Almeno 2 caratteri.",
+        "placeholder": "Es. Giulia Bianchi"
+      },
+      "email": {
+        "label": "Email",
+        "hint": "La usiamo solo per risponderti.",
+        "placeholder": "nome@esempio.it"
+      },
+      "message": {
+        "label": "Messaggio",
+        "hint": "Almeno 10 caratteri.",
+        "placeholder": "Es. Cerco uno strumento di screening per la scuola primaria."
+      }
+    },
+    "errors": {
+      "nameRequired": "Inserisci il tuo nome.",
+      "nameShort": "Il nome deve avere almeno 2 caratteri.",
+      "emailRequired": "Inserisci il tuo indirizzo email.",
+      "emailInvalid": "Inserisci un indirizzo email valido, ad esempio nome@esempio.it.",
+      "messageRequired": "Scrivi il tuo messaggio.",
+      "messageShort": {
+        "one": "Il messaggio deve avere almeno 10 caratteri: ne manca 1.",
+        "other": "Il messaggio deve avere almeno 10 caratteri: ne mancano {count}."
+      },
+      "summary": {
+        "one": "C'è 1 campo da correggere.",
+        "other": "Ci sono {count} campi da correggere."
+      }
+    },
+    "counter": "{count}/10",
+    "submit": "Invia il messaggio",
+    "sending": "Invio in corso…",
+    "success": {
+      "title": "Messaggio inviato",
+      "text": "Grazie, {name}. Ti risponderemo all'indirizzo {email}.",
+      "demo": "Demo tecnica: nessun dato è stato inviato o salvato.",
+      "again": "Scrivi un altro messaggio"
+    }
+  },
+  "footer": {
+    "description": "Test e formazione per professionisti e professioniste della psicologia.",
+    "navLabel": "Navigazione del sito",
+    "socialLabel": "Seguici",
+    "social": {
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram",
+      "youtube": "YouTube",
+      "facebook": "Facebook"
+    },
+    "socialPlaceholder": "(link segnaposto)",
+    "copyright": "© {year} Giunti Psychometrics. Tutti i diritti riservati.",
+    "demo": "Demo tecnica realizzata per una prova di selezione: non è il sito ufficiale di Giunti Psychometrics. Prodotti, autori, prezzi e date sono di fantasia."
+  },
+  "fab": {
+    "label": "Richiedi una demo",
+    "message": "Vorrei richiedere una demo degli strumenti di valutazione."
+  }
+}

@@ -1,0 +1,119 @@
+.interpreter
+  background-color: var(--color-page)
+  padding-top: 5rem
+  padding-bottom: 5rem
+  +mq(md)
+    padding-top: 7rem
+    padding-bottom: 7rem
+
+  &__inner
+    display: grid
+    gap: 3rem
+    +mq(lg)
+      grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr)
+      align-items: start
+      gap: 4rem
+
+  &__controls
+    margin-top: 2.5rem
+
+  &__slider-head
+    display: flex
+    align-items: baseline
+    justify-content: space-between
+    gap: 1rem
+
+  &__label
+    t-sm()
+    font-weight: 600
+    color: var(--color-ink)
+
+  &__z
+    font-family: var(--font-display)
+    font-size: 2.25rem
+    line-height: 1
+    font-weight: 600
+    letter-spacing: -0.025em
+    font-variant-numeric: tabular-nums
+    color: var(--color-primary)
+
+  &__range
+    margin-top: 0.5rem
+
+  &__readouts
+    margin-top: 2rem
+    display: grid
+    grid-template-columns: repeat(3, minmax(0, 1fr))
+    gap: 1rem
+    border-top: 1px solid var(--color-border-soft)
+    padding-top: 1.5rem
+
+  &__readout
+    display: flex
+    flex-direction: column
+    gap: 0.25rem
+
+  &__readout-label
+    t-xs()
+    font-weight: 600
+    letter-spacing: 0.025em
+    text-transform: uppercase
+    color: var(--color-muted)
+
+  &__readout-value
+    font-family: var(--font-display)
+    font-size: 1.875rem
+    line-height: 1
+    font-weight: 600
+    letter-spacing: -0.025em
+    font-variant-numeric: tabular-nums
+    color: var(--color-ink)
+
+  &__note
+    margin-top: 1.5rem
+    t-sm()
+    color: var(--color-muted)
+
+  &__card
+    border-radius: 1.5rem
+    border: 1px solid var(--color-border-soft)
+    background-color: var(--color-surface)
+    padding: 1.5rem
+    box-shadow: var(--shadow-card)
+    +mq(md)
+      padding: 2rem
+
+  &__card-head
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 1rem
+
+  &__band
+    display: inline-flex
+    border-radius: var(--radius-pill)
+    background-color: var(--color-primary-tint)
+    padding: 0.25rem 0.75rem
+    t-sm()
+    font-weight: 600
+    color: var(--color-primary)
+
+  &__card-percentile
+    font-family: var(--font-display)
+    font-size: 1.5rem
+    line-height: 1
+    font-weight: 600
+    font-variant-numeric: tabular-nums
+    color: var(--color-ink)
+
+  &__chart
+    margin-top: 1rem
+
+  &__dots
+    margin-top: 1.5rem
+
+  // Three lines reserved: a shorter or longer sentence never changes the card height.
+  &__sentence
+    margin-top: 1.25rem
+    min-height: unquote('3lh')
+    color: var(--color-ink)

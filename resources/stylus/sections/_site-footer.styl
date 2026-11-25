@@ -1,0 +1,74 @@
+.site-footer
+  background-color: var(--color-ink-deep)
+  color: var(--color-ink-soft)
+
+  &__intro
+    padding-top: 4rem
+    +mq(md)
+      padding-top: 6rem
+
+  &__tagline
+    text-wrap: balance
+
+  &__main
+    margin-top: 3.5rem
+    display: grid
+    gap: 2.5rem
+    padding-top: 3.5rem
+    padding-bottom: 3.5rem
+    +mq(md)
+      margin-top: 5rem
+    +mq(md)
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) minmax(0, 1fr)
+
+  &__description
+    margin-top: 1rem
+    max-width: 20rem
+    t-sm()
+    color: var(--color-ink-muted)
+
+  &__social-title
+    font-weight: 600
+    color: #fff
+
+  &__social
+    margin-top: 0.75rem
+    display: flex
+    gap: 0.5rem
+
+  &__social-link
+    display: inline-flex
+    width: 2.75rem
+    height: 2.75rem
+    align-items: center
+    justify-content: center
+    border-radius: var(--radius-md)
+    background-color: rgba(255, 255, 255, 0.05)
+    color: var(--color-ink-soft)
+    transition-colors()
+    +hover()
+      background-color: rgba(255, 255, 255, 0.1)
+      color: #fff
+    &:focus-visible
+      outline-color: var(--color-accent)
+
+  &__bottom
+    border-top: 1px solid rgba(255, 255, 255, 0.1)
+
+  &__legal
+    display: flex
+    flex-direction: column
+    gap: 0.5rem
+    padding-top: 1.5rem
+    padding-bottom: 1.5rem
+    t-xs()
+    color: var(--color-ink-muted)
+    +mq(md)
+      flex-direction: row
+      justify-content: space-between
+      gap: 2rem
+
+  &__demo
+    max-width: 36rem
+    +mq(md)
+      text-align: right

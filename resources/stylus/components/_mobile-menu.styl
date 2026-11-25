@@ -1,0 +1,27 @@
+.mobile-menu
+  margin: 0 0 0 auto
+  height: 100dvh
+  max-height: none
+  width: unquote('min(22rem, 100vw)')
+  max-width: none
+  background-color: var(--color-surface)
+  padding: 0
+  color: var(--color-ink)
+  box-shadow: var(--shadow-drawer)
+
+  &__inner
+    display: flex
+    height: 100%
+    flex-direction: column
+    gap: 1.5rem
+    padding: var(--gutter)
+
+  &__head
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  &__title
+    font-family: var(--font-display)
+    t-xl()
+    font-weight: 600
